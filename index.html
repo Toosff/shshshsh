@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Игровых Девайсов | Премиум игровое оборудование</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <!-- Векторная графика: SVG логотип -->
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#A00000" stroke-width="3"/>
+                        <path d="M 30 50 L 45 35 L 55 35 L 70 50 L 55 65 L 45 65 Z" fill="#E63946"/>
+                        <circle cx="50" cy="50" r="15" fill="#1a0000"/>
+                    </svg>
+                    <h1>Мир Игровых Девайсов</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                        <span>Главная</span>
+                    </a></li>
+                    <li><a href="news.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        <span>Новости</span>
+                    </a></li>
+                    <li><a href="catalog.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                        <span>Каталог</span>
+                    </a></li>
+                    <li><a href="cart.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                        <span>Корзина</span>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a></li>
+                    <li><a href="contact.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Контакты</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero секция с растровой графикой (фоновое изображение) -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Погрузитесь в мир премиум игрового оборудования</h2>
+            <p class="hero-subtitle">Откройте для себя устройства, которые изменят ваш игровой опыт</p>
+            <a href="#featured-devices" class="cta-button">Исследовать коллекцию</a>
+        </div>
+        <!-- 3D эффект: частицы -->
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+    <!-- Основная секция -->
+    <main class="content">
+        
+        <!-- Секция с популярными устройствами -->
+        <section id="featured-devices" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Популярные модели</h2>
+                <p class="section-description">Выбор профессионалов и энтузиастов</p>
+            </div>
+            
+            <div class="devices-grid">
+                
+                <article class="device-card" data-3d="true">
+                    <div class="card-image-wrapper">
+                        <div class="card-badge">Хит продаж</div>
+                            <img src="img/222.jpg" alt="Logitech G502" data-image-id="device-1" class="editable-image">
+                        <div class="card-overlay">
+                            <button class="card-button" data-product="logitech-g502">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Logitech G502</h3>
+                        <p>Профессиональная игровая мышь с точным сенсором HERO 25K и 11 программируемыми кнопками.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">RGB</span>
+                            <span class="feature-tag">Wireless</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="device-card" data-3d="true">
+                    <div class="card-image-wrapper">
+                        <div class="card-badge new">Новинка</div>
+                        <img src="img/333.jpg" alt="Razer Kraken" loading="lazy" data-image-id="device-2" class="editable-image">
+                        <div class="card-overlay">
+                            <button class="card-button" data-product="razer-kraken">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M9 18V5a3 3 0 0 1 3-3 3 3 0 0 1 3 3v13"/>
+                                <path d="M5 12h14"/>
+                                <path d="M9 12h6"/>
+                            </svg>
+                        </div>
+                        <h3>Razer Kraken X</h3>
+                        <p>Комфортные наушники для геймеров с объемным звуком 7.1 и охватывающим микрофоном.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">7.1 Surround</span>
+                            <span class="feature-tag">Lightweight</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="device-card" data-3d="true">
+                    <div class="card-image-wrapper">
+                        <div class="card-badge premium">Premium</div>
+                        <img src="img/444.png" alt="Corsair K95 RGB" loading="lazy" data-image-id="device-3" class="editable-image">
+                        <div class="card-overlay">
+                            <button class="card-button" data-product="corsair-k95">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M6 8h12M6 12h8M6 16h4"/>
+                            </svg>
+                        </div>
+                        <h3>Corsair K95 RGB Platinum</h3>
+                        <p>Механическая клавиатура премиум-класса с переключателями Cherry MX и RGB подсветкой.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Cherry MX</span>
+                            <span class="feature-tag">RGB</span>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+
+        <!-- Секция о нашей компании -->
+        <section id="company-features" class="section graphics-section">
+            <div class="section-header">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <p class="section-description">Мы предлагаем лучший сервис и качество</p>
+            </div>
+            
+            <div class="graphics-grid">
+                <div class="graphics-card vector-card">
+                    <div class="graphics-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#E63946" stroke-width="4"/>
+                            <path d="M35 50 L45 60 L65 40" stroke="#E63946" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Гарантия качества</h3>
+                    <ul>
+                        <li>Оригинальная продукция</li>
+                        <li>Проверка перед отправкой</li>
+                        <li>Официальная гарантия</li>
+                        <li>Возврат в течение 14 дней</li>
+                        <li>Сертифицированные товары</li>
+                    </ul>
+                    <p class="graphics-description">Мы гарантируем подлинность и качество каждого товара</p>
+                </div>
+                
+                <div class="graphics-card raster-card">
+                    <div class="graphics-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 20 L70 35 L70 65 L50 80 L30 65 L30 35 Z" fill="#E63946" opacity="0.8"/>
+                            <circle cx="50" cy="50" r="15" fill="#A00000"/>
+                            <path d="M50 40 L50 60 M40 50 L60 50" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Экспертная поддержка</h3>
+                    <ul>
+                        <li>Консультации специалистов</li>
+                        <li>Помощь в выборе</li>
+                        <li>Техническая поддержка 24/7</li>
+                        <li>Детальные обзоры товаров</li>
+                        <li>Сравнение характеристик</li>
+                    </ul>
+                    <p class="graphics-description">Наша команда всегда готова помочь с выбором</p>
+                </div>
+                
+                <div class="graphics-card 3d-card">
+                    <div class="graphics-icon 3d-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="30" width="50" height="40" rx="5" fill="#E63946" opacity="0.8"/>
+                            <path d="M30 35 L45 35 M30 45 L70 45 M30 55 L60 55" stroke="#A00000" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="50" cy="50" r="20" fill="none" stroke="#E63946" stroke-width="2" stroke-dasharray="5,5"/>
+                        </svg>
+                    </div>
+                    <h3>Быстрая доставка</h3>
+                    <ul>
+                        <li>Доставка по всей России</li>
+                        <li>Экспресс-доставка в день заказа</li>
+                        <li>Бесплатная доставка от 5000₽</li>
+                        <li>Отслеживание посылки онлайн</li>
+                        <li>Пункты выдачи в каждом городе</li>
+                    </ul>
+                    <p class="graphics-description">Получите заказ быстро и удобно</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "О нас" -->
+        <section id="about-us" class="section about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О нас</h2>
+                    <p>Мы — команда энтузиастов, которые живут играми и технологиями. Наша миссия — помочь вам найти идеальное игровое оборудование, которое раскроет ваш потенциал и сделает каждый игровой сеанс незабываемым.</p>
+                    <p>Мы тщательно тестируем каждое устройство, анализируем его производительность и предоставляем честные, объективные обзоры. Наш опыт и экспертиза помогут вам принять правильное решение.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Обзоров</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Пользователей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#A00000;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#E63946;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="80" fill="url(#grad1)"/>
+                            <path d="M100 40 L130 80 L100 120 L70 80 Z" fill="#1a0000" opacity="0.7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Мир Игровых Девайсов</h3>
+                <p>Ваш источник информации о лучшем игровом оборудовании</p>
+            </div>
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>Email: ilianefedov2007@gmail.com</li>
+                    <li>Телефон: +7 (985) 188-73-37</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Социальные сети</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="VKontakte">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.785 16.241s.287-.03.435-.184c.135-.14.131-.404.131-.631 0-.494.007-1.26-.005-1.961 0-.17.05-.336.163-.473.19-.23.533-.48.768-.617.85-.495 1.89-1.12 1.89-2.38 0-1.01-.77-1.58-1.64-1.58-.52 0-.95.18-1.24.38-.15.1-.26.18-.35.18-.1 0-.18-.08-.18-.19v-1.5c0-.15.08-.22.19-.3.5-.35 1.14-.55 1.85-.55 1.73 0 2.98 1.05 2.98 2.74 0 1.21-.66 1.95-1.5 2.5-.2.13-.31.22-.38.3-.07.08-.1.16-.1.26 0 .19.01.49.01.85 0 .24-.01.48-.02.73 0 .1-.03.2-.1.27-.08.08-.22.1-.33.1h-1.85zm-4.5-2.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1.5-3c0 .83-.67 1.5-1.5 1.5S4 11.57 4 10.74 4.67 9.24 5.5 9.24 7 9.91 7 10.74zm9-3c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S10.17 6.24 11 6.24s1.5.67 1.5 1.5z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.17 1.858-.896 6.728-.896 6.728-.896 6.728-1.27 8.884-1.27 8.884s-.17.17-.38.17c-.17 0-.17-.17-.17-.17l.896-5.1-2.55-2.55s-.17-.17 0-.34c.17-.17.34-.17.34-.17l6.12-1.87s.51-.17.51.17c0 .17-.17.34-.34.51z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Мир Игровых Девайсов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для подробной информации о товаре -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalProductImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <div id="modalProductBadge" class="modal-badge"></div>
+                    <div class="modal-rating">
+                        <div class="stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="rating-text">5.0 / 5.0</span>
+                    </div>
+                    <p id="modalProductDescription" class="modal-description"></p>
+                    <div class="modal-specs">
+                        <h3>Характеристики:</h3>
+                        <ul id="modalProductSpecs"></ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Особенности:</h3>
+                        <div id="modalProductFeatures" class="features-list"></div>
+                    </div>
+                    <div class="modal-price">
+                        <span class="price-label">Цена:</span>
+                        <span id="modalProductPrice" class="price-value"></span>
+                    </div>
+                    <button class="modal-buy-button">Купить сейчас</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для редактирования изображений -->
+    <div id="imageEditModal" class="modal">
+        <div class="modal-content image-edit-modal">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2>Изменить изображение</h2>
+                <div class="image-edit-form">
+                    <div class="form-group">
+                        <label for="imageUrlInput">URL изображения или путь к файлу:</label>
+                        <input type="text" id="imageUrlInput" placeholder="Вставьте URL или путь к изображению (например: img/photo.jpg)">
+                        <p class="form-hint">Вы можете вставить URL изображения из интернета или путь к файлу в папке img/</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Или загрузите файл:</label>
+                        <input type="file" id="imageFileInput" accept="image/*">
+                    </div>
+                    <div class="image-preview">
+                        <p>Предпросмотр:</p>
+                        <img id="imagePreview" src="" alt="Предпросмотр" style="max-width: 100%; max-height: 300px; display: none; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="modal-buttons">
+                        <button id="saveImageBtn" class="save-btn">Сохранить</button>
+                        <button id="cancelImageBtn" class="cancel-btn">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
